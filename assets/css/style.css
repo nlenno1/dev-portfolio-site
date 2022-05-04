@@ -11,6 +11,10 @@
     justify-content: space-between;
 }
 
+section {
+    padding-top: 94px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -42,7 +46,7 @@
 
 #introduction {
     height: calc(100vh-94px);
-    padding: 14vh 0;
+    padding: calc(14vh + 94px) 0 14vh;
 }
 
 .image-card {
@@ -84,10 +88,9 @@
 
 /* Resume */
 
-#resume {
+#resume, #portfolio {
     height: 100vh;
 }
-
 
 .resume-card-container {
     display: flex;

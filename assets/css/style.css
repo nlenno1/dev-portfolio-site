@@ -1,13 +1,15 @@
 /* Global */
 
-.center-objects {
+.center-align-objects, .center-objects {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between;
 }
 
+.center-objects {
+    justify-content: space-between;
+}
 
 /* Navbar */
 
@@ -39,7 +41,8 @@
 /* Introduction */
 
 #introduction {
-    padding: 6vw 0;
+    height: calc(100vh-94px);
+    padding: 14vh 0;
 }
 
 .image-card {
@@ -77,4 +80,28 @@
     .intro-height {
         height: 50vh;
     }
+}
+
+/* Resume */
+
+#resume {
+    height: 100vh;
+}
+
+
+.resume-card-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 5vw;
+    margin: 5vw 0;
+}
+
+.timeline-left {
+    border-left: 3px solid red;
+}
+
+.timeline-right {
+    border-right: 3px solid red;
 }

@@ -1,0 +1,26 @@
+/* Navbar */
+
+.navbar {
+    padding: 1.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    padding-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        padding-top: 0;
+        gap: 3rem;
+        font-size: 1.2rem;
+    }
+    .navbar-expand-md .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-end;
+    }
+}

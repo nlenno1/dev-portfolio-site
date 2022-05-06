@@ -44,11 +44,6 @@ section {
 
 /* Introduction */
 
-#introduction {
-    height: calc(100vh-94px);
-    padding: calc(14vh + 94px) 0 14vh;
-}
-
 .image-card {
     height: 400px;
 }
@@ -80,17 +75,7 @@ section {
     }
 }
 
-@media (min-width: 997px) {
-    .intro-height {
-        height: 50vh;
-    }
-}
-
 /* Resume */
-
-#resume, #portfolio {
-    height: 100vh;
-}
 
 .resume-card-container {
     display: flex;

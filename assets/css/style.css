@@ -20,6 +20,10 @@ section {
     padding-top: 94px;
 }
 
+.card {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -64,7 +68,6 @@ section {
     width: 100%;
     padding: 35px;
     border-radius: 0.5rem;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
 .buttons-container {
@@ -156,8 +159,9 @@ section {
 .portfolio-card-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     height: 100%;
     gap: 2rem;
 }
@@ -167,8 +171,17 @@ section {
     min-width: auto;
 }
 
+.portfolio-card-container .card:hover .project-image-container img {
+    transform: scale(1.1);
+}
+
 .project-image-container {
     margin: 1rem auto 0;
+    overflow: hidden;
+}
+
+.project-image-container img{
+    transition: .25s ease-in-out;
 }
 
 .project-image-container, .project-image-container img {
@@ -187,4 +200,10 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(0,0,0,.3);
 }

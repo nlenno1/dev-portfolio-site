@@ -15,9 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <!-- AOS Link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Local CSS -->
@@ -57,13 +54,19 @@
                 <div class="col-12 col-md-7 col-lg-8 center-objects intro-height">
                     <div class="card">
                         <h1>Hello I'm Nick!</h1>
-                        <h3>Recently Graduated Junior Full Stack Developer</h3>
-                        <p><i class="fas fa-envelope"></i> nick.lennon@hotmail.co.uk</p>
-                        <p><i class="fas fa-map-marker-alt"></i> London Area, England</p>
+                        <h5>Recently Graduated Junior Full Stack Developer</h5>
+                        <div class="mt-4">
+                            <a href="mailto:nick.lennon@hotmail.co.uk" aria-label="Click to email me"><i class="fas fa-envelope me-2"></i> nick.lennon@hotmail.co.uk</a>
+                            <p><i class="fas fa-map-marker-alt me-2"></i> London Area, England</p>
+                        </div>
+                        <div class="social-link-container">
+                            <a class="social-icon" href="https://www.linkedin.com/in/n-lennon/"><i class="fab fa-linkedin text-center"></i></a>
+                            <a class="social-icon" href="https://github.com/nlenno1"><i class="fab fa-github text-center"></i></a>
+                        </div>
                     </div>
                     <div class="card d-none d-md-flex buttons-container mt-4 px-2">
                         <a href="#" class="btn btn-secondary btn-lg">Download My CV</a>
-                        <a href="emailto:nick.lennon@hotmail.co.uk" class="btn btn-secondary btn-lg">Contact Me</a>
+                        <a href="mailto:nick.lennon@hotmail.co.uk" class="btn btn-secondary btn-lg">Contact Me</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-5 col-lg-4 center-objects intro-height">
@@ -204,6 +207,7 @@
     </footer>
 
     <!-- JS -->
+    <script src="https://kit.fontawesome.com/d90f353352.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

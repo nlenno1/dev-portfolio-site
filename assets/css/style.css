@@ -110,6 +110,7 @@ body {
     position: relative;
     height: 350px;
     width: 260px;
+    margin-bottom: 3rem;
 }
 
 .image-card img {
@@ -127,10 +128,6 @@ body {
     border-right: 10px solid #04d9ff;
     height: inherit;
     width: inherit;
-}
-
-.intro-info {
-    margin-bottom: 3rem;
 }
 
 .intro-info > * {

@@ -211,7 +211,8 @@ body {
 }
 
 .skills-category {
-    margin-left: 10vw;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 #skills h3 {
@@ -222,13 +223,11 @@ body {
     list-style-type: none;
 }
 
-
 @media (min-width: 768px) {
     #skills li {
         margin-left: 30px;
     }
 }
-
 
 /* Resume */
 

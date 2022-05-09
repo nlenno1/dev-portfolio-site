@@ -1,10 +1,5 @@
 /* Global */
 
-body {
-    background-color: #262626;
-    color: #fafafa;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -36,15 +31,30 @@ section {
     background-color: rgba(0,0,0,0) !important;
 }
 
-h2 {
-    font-weight: 700 !important;
+/* Colors */
+
+body {
+    background-color: #262626;
+    color: #fafafa;
+}
+
+#skills i, #portfolio h4, .nav-link:hover{
+    color: #04d9ff !important;
+}
+
+#portfolio .card:hover, .social-icon {
+    background-color: #04d9ff !important;
+}
+
+#portfolio .card:hover a, #portfolio .card:hover p, #portfolio .card:hover h4 {
+    color: #000 !important;
 }
 
 /* Navbar */
 
 .navbar {
     padding: 1.5rem 1rem;
-    background-color: rgba(0, 0, 0, .3) !important;
+    background-color: #161616 !important;
 }
 
 .navbar-brand {
@@ -53,13 +63,25 @@ h2 {
 
 .navbar-nav {
     padding-top: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    color: #fafafa !important;
 }
 
 @media (min-width: 768px) {
     .navbar-nav {
         padding-top: 0;
-        gap: 2rem;
         font-size: 1.2rem;
     }
 
@@ -72,29 +94,71 @@ h2 {
 /* Introduction */
 
 #introduction {
+    padding-top: 94px;
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
+#introduction .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .image-card {
-    height: 400px;
+    display: inline-block;
+    position: relative;
+    height: 350px;
+    width: 260px;
 }
 
 .image-card img {
-    height: 100%;
+    height: inherit;
+    width: inherit;
     object-fit: cover;
-    object-position: top;
 }
 
-#introduction .card {
-    width: 100%;
-    padding: 35px;
+.image-card:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-top: 10px solid #04d9ff;
+    border-right: 10px solid #04d9ff;
+    height: inherit;
+    width: inherit;
+}
+
+.intro-info {
+    margin-bottom: 3rem;
+}
+
+.intro-info > * {
+    text-align: center;
 }
 
 .buttons-container {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 1rem;
+    width: 100%;
+    padding: 5vw;
+}
+
+.buttons-container a {
+    background-color: #262626;
+    border: 2px solid #04d9ff;
+    color: #04d9ff;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: .7rem 1.2rem;
+    font-size: 1.15rem;
+}
+
+.buttons-container a:hover {
+    background-color: #04d9ff;
+    color: #262626;
 }
 
 .social-link-container {
@@ -108,7 +172,6 @@ h2 {
 
 .social-icon {
     font-size: 2.2rem;
-    background-color: #04d9ff;
     width: 3.5rem;
     border-radius: 50%;
     aspect-ratio: 1/1;
@@ -119,10 +182,25 @@ h2 {
     line-height: 56px;
 }
 
+@media (min-width: 576px) {
+    .image-card:after {
+        top: -1.9rem;
+        right: -2.2rem;
+    }
+    .image-card {
+        width: 260px;
+    }
+    .intro-info > * {
+        text-align: initial;
+    }
+}
 
 @media (min-width: 768px) {
-    .image-card {
-        height: 100%;
+    #introduction {
+        padding-top: 186px;
+    }
+    .intro-info {
+        max-width: 50vw;
     }
 }
 
@@ -202,7 +280,10 @@ h2 {
 
 #portfolio h2 {
     margin: 0 auto 3rem;
-    width: 5em;
+}
+
+#portfolio hr {
+    height: 5px;
 }
 
 .portfolio-card-container {
@@ -218,19 +299,16 @@ h2 {
 .portfolio-card-container .card {
     width: 300px;
     min-width: auto;
+    transition: .4s ease-in-out;
 }
 
-.portfolio-card-container .card:hover .project-image-container img {
-    transform: scale(1.1);
+.portfolio-card-container .card:hover {
+    transform: scale(1.15);
 }
 
 .project-image-container {
     margin: 1rem auto 0;
     overflow: hidden;
-}
-
-.project-image-container img {
-    transition: .25s ease-in-out;
 }
 
 .project-image-container,
@@ -256,7 +334,7 @@ h2 {
 footer {
     display: flex;
     min-height: 300px !important;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: #161616;
     align-items: center;
 }
 

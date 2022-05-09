@@ -5,7 +5,8 @@ a {
     color: inherit;
 }
 
-.center-align-objects, .center-objects {
+.center-align-objects,
+.center-objects {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -45,9 +46,10 @@ section {
         gap: 3rem;
         font-size: 1.2rem;
     }
+
     .navbar-expand-md .navbar-collapse {
-    flex-direction: column;
-    align-items: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
@@ -78,7 +80,7 @@ section {
 }
 
 .social-link-container {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -89,9 +91,9 @@ section {
 .social-icon {
     font-size: 2.2rem;
     border-radius: 50%;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
     width: 3.5rem;
-    aspect-ratio:  1/1;
+    aspect-ratio: 1/1;
 }
 
 .social-icon i {
@@ -117,7 +119,8 @@ section {
     position: relative;
 }
 
-.timeline-point-left, .timeline-point-right {
+.timeline-point-left,
+.timeline-point-right {
     display: none !important;
 }
 
@@ -126,23 +129,24 @@ section {
         border-left: 3px solid red;
         padding-left: 5vw;
     }
-    
+
     .timeline-right {
         border-right: 3px solid red;
         padding-right: 5vw;
     }
-    
-    .timeline-point-left, .timeline-point-right {
+
+    .timeline-point-left,
+    .timeline-point-right {
         display: inline-block !important;
         position: absolute;
         font-size: 2.5rem;
         bottom: calc(50% - 10px);
     }
-    
+
     .timeline-point-left {
         left: calc(-5vw - 28px);
     }
-    
+
     .timeline-point-right {
         right: calc(-5vw - 28px);
     }
@@ -152,8 +156,13 @@ section {
 
 /* Portfolio */
 
-#portfolio {
+#portfolio, #skills {
+    background: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)),
+        url(/assets/section-background.jpg) no-repeat center fixed;
+    background-size: cover;
     padding-bottom: 100px;
+    color: #fafafa;
 }
 
 .portfolio-card-container {
@@ -164,6 +173,7 @@ section {
     align-items: flex-start;
     height: 100%;
     gap: 2rem;
+    color: #000;
 }
 
 .portfolio-card-container .card {
@@ -180,11 +190,12 @@ section {
     overflow: hidden;
 }
 
-.project-image-container img{
+.project-image-container img {
     transition: .25s ease-in-out;
 }
 
-.project-image-container, .project-image-container img {
+.project-image-container,
+.project-image-container img {
     width: 270px;
     height: 175px;
     border-radius: 0.25rem;
@@ -205,5 +216,5 @@ section {
 /* Footer */
 
 footer {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
 }

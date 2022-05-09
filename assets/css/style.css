@@ -38,7 +38,7 @@ body {
     color: #fafafa;
 }
 
-#skills i, #portfolio h4, .nav-link:hover{
+#skills i, #portfolio h4, .nav-link:hover, #resume .card i{
     color: #04d9ff !important;
 }
 
@@ -232,6 +232,11 @@ body {
 
 /* Resume */
 
+#resume .card {
+    padding: 15px;
+    border: 1px #fafafa groove;
+}
+
 .resume-card-container {
     display: flex;
     gap: 20px;
@@ -248,12 +253,10 @@ body {
 
 @media (min-width: 576px) {
     .timeline-left {
-        border-left: 3px solid red;
         padding-left: 5vw;
     }
 
     .timeline-right {
-        border-right: 3px solid red;
         padding-right: 5vw;
     }
 

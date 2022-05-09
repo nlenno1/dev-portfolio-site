@@ -1,5 +1,10 @@
 /* Global */
 
+body {
+    background: linear-gradient(rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2)), url(/assets/section-background.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -23,6 +28,16 @@ section {
 
 .card {
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 0;
+    background-color: #fafafa;
+}
+
+#introduction, #skills {
+    background-color: #EAC67A;
+}
+
+h2 {
+    font-weight: 700 !important;
 }
 
 /* Navbar */
@@ -43,7 +58,7 @@ section {
 @media (min-width: 768px) {
     .navbar-nav {
         padding-top: 0;
-        gap: 3rem;
+        gap: 2rem;
         font-size: 1.2rem;
     }
 
@@ -55,12 +70,15 @@ section {
 
 /* Introduction */
 
+#introduction {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
 .image-card {
     height: 400px;
 }
 
 .image-card img {
-    border-radius: 0.5rem;
     height: 100%;
     object-fit: cover;
     object-position: top;
@@ -69,7 +87,6 @@ section {
 #introduction .card {
     width: 100%;
     padding: 35px;
-    border-radius: 0.5rem;
 }
 
 .buttons-container {
@@ -90,7 +107,6 @@ section {
 
 .social-icon {
     font-size: 2.2rem;
-    border-radius: 50%;
     background-color: rgba(0, 0, 0, .2);
     width: 3.5rem;
     aspect-ratio: 1/1;
@@ -110,8 +126,12 @@ section {
 
 /* Skills */
 
+#skills {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
+
 .skills-category {
-    margin-left: 25%;
+    margin-left: 10vw;
 }
 
 #skills h3 {
@@ -122,8 +142,11 @@ section {
     list-style-type: none;
 }
 
-#skills li {
-    margin-left: 30px;
+
+@media (min-width: 768px) {
+    #skills li {
+        margin-left: 30px;
+    }
 }
 
 
@@ -180,11 +203,13 @@ section {
 /* Portfolio */
 
 #portfolio, #resume {
-    background: linear-gradient(rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)),
-        url(/assets/section-background.jpg) no-repeat center fixed;
-    background-size: cover;
     color: #fafafa;
+}
+
+#portfolio h2 {
+    margin: 0 auto 3rem;
+    color: #000;
+    width: 150px;
 }
 
 .portfolio-card-container {
@@ -220,7 +245,6 @@ section {
 .project-image-container img {
     width: 270px;
     height: 175px;
-    border-radius: 0.25rem;
     object-fit: cover;
 }
 

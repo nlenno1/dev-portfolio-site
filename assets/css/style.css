@@ -18,7 +18,7 @@ a {
 }
 
 section {
-    padding-top: 94px;
+    padding: 94px 0;
 }
 
 .card {
@@ -108,7 +108,30 @@ section {
     }
 }
 
+/* Skills */
+
+.skills-category {
+    margin-left: 25%;
+}
+
+#skills h3 {
+    text-align: center
+}
+
+#skills ul {
+    list-style-type: none;
+}
+
+#skills li {
+    margin-left: 30px;
+}
+
+
 /* Resume */
+
+#resume .card :not(i) {
+    color: #000;
+}
 
 .resume-card-container {
     display: flex;
@@ -156,12 +179,11 @@ section {
 
 /* Portfolio */
 
-#portfolio, #skills {
+#portfolio, #resume {
     background: linear-gradient(rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)),
         url(/assets/section-background.jpg) no-repeat center fixed;
     background-size: cover;
-    padding-bottom: 100px;
     color: #fafafa;
 }
 

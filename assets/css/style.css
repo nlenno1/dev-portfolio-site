@@ -1,13 +1,17 @@
 /* Global */
 
 body {
-    background: linear-gradient(rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2)), url(/assets/section-background.jpg) no-repeat center fixed;
-    background-size: cover;
+    background-color: #262626;
+    color: #fafafa;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p a {
+    font-weight: 600;
 }
 
 .center-align-objects,
@@ -28,12 +32,8 @@ section {
 
 .card {
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-    border-radius: 0;
-    background-color: #fafafa;
-}
-
-#introduction, #skills {
-    background-color: #EAC67A;
+    border-radius: 0.8rem;
+    background-color: rgba(0,0,0,0) !important;
 }
 
 h2 {
@@ -44,6 +44,7 @@ h2 {
 
 .navbar {
     padding: 1.5rem 1rem;
+    background-color: rgba(0, 0, 0, .3) !important;
 }
 
 .navbar-brand {
@@ -102,13 +103,14 @@ h2 {
     align-content: center;
     justify-content: center;
     gap: 10px;
-    margin-top: .5rem;
+    height: 100%
 }
 
 .social-icon {
     font-size: 2.2rem;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: #04d9ff;
     width: 3.5rem;
+    border-radius: 50%;
     aspect-ratio: 1/1;
 }
 
@@ -151,10 +153,6 @@ h2 {
 
 
 /* Resume */
-
-#resume .card :not(i) {
-    color: #000;
-}
 
 .resume-card-container {
     display: flex;
@@ -202,14 +200,9 @@ h2 {
 
 /* Portfolio */
 
-#portfolio, #resume {
-    color: #fafafa;
-}
-
 #portfolio h2 {
     margin: 0 auto 3rem;
-    color: #000;
-    width: 150px;
+    width: 5em;
 }
 
 .portfolio-card-container {
@@ -220,7 +213,6 @@ h2 {
     align-items: flex-start;
     height: 100%;
     gap: 2rem;
-    color: #000;
 }
 
 .portfolio-card-container .card {
@@ -262,5 +254,37 @@ h2 {
 /* Footer */
 
 footer {
+    display: flex;
+    min-height: 300px !important;
     background-color: rgba(0, 0, 0, .3);
+    align-items: center;
+}
+
+footer .container > * {
+    margin: 2rem 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+    footer .container > * {
+        margin: 0;
+    }
+    footer .container {
+        flex-direction: row;
+        padding-bottom: .5rem;
+    }
+    footer {
+        min-height: 200px !important;
+    }
 }

@@ -38,7 +38,7 @@ body {
     color: #fafafa;
 }
 
-#skills i, #portfolio h4, .nav-link:hover, #resume .card i{
+#skills i, #portfolio h4, .nav-link:hover, #resume .card i, .text-blue, footer a:hover {
     color: #04d9ff !important;
 }
 
@@ -64,15 +64,6 @@ body {
 .navbar-nav {
     padding-top: 1.5rem;
     margin-left: 2rem;
-    width: 100%;
-    max-width: 450px;
-    display: flex;
-    flex-direction: row;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
 }
 
 .nav-link {
@@ -80,6 +71,17 @@ body {
 }
 
 @media (min-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+        max-width: 450px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
     .navbar-nav {
         padding-top: 0;
         font-size: 1.2rem;
@@ -122,8 +124,8 @@ body {
 .image-card:after {
     content: "";
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -1.1rem;
+    right: -1.1rem;
     border-top: 10px solid #04d9ff;
     border-right: 10px solid #04d9ff;
     height: inherit;
@@ -197,6 +199,13 @@ body {
         padding-top: 186px;
     }
     .intro-info {
+        width: 50vw;
+        max-width: 430px;
+    }
+}
+
+@media (min-width: 997px) {
+    .intro-info {
         max-width: 50vw;
     }
 }
@@ -238,7 +247,7 @@ body {
     gap: 20px;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 4vw 0;
+    margin: 3rem 0;
     position: relative;
 }
 
@@ -303,7 +312,7 @@ body {
 }
 
 .portfolio-card-container .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .project-image-container {
